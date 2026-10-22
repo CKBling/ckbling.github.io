@@ -40,10 +40,10 @@ h1 { font-size: 38px; line-height: 1.2; font-weight: 600; }
 .contact-links a, .portrait-detail { display: inline-flex; align-items: center; gap: 7px; }
 .portrait-detail { white-space: normal; }
 .portrait-role { font-weight: 600; color: var(--ink); }
-.school-logo, .company-logo { display: flex; align-items: center; justify-content: center; width: 96px; height: 96px; overflow: hidden; position: relative; }
+.school-logo, .company-logo { display: flex; align-items: center; justify-content: center; width: 96px; height: 96px; overflow: hidden; position: relative; justify-self: center; align-self: center; }
 .school-logo img { position: absolute; width: 160%; max-width: none; height: auto; left: -29%; top: -43%; }
-.company-logo img { width: 100%; height: auto; }
-.company-logo img { max-height: 100%; object-fit: contain; }
+.company-logo { width: 130px; }
+.company-logo img { width: 100%; height: auto; max-height: 100%; object-fit: contain; }
 .section { border-top: 1px solid var(--line); padding: 28px 0; }
 h2 { font-size: 26px; line-height: 1.35; font-weight: 600; }
 .section-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px 24px; }
@@ -52,9 +52,10 @@ h2 { font-size: 26px; line-height: 1.35; font-weight: 600; }
 .news-list { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 12px; }
 .news-list li { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 16px; }
 .news-list time { font-size: 15px; color: var(--muted); padding-top: 2px; }
-.publication-category { margin-top: 30px; font-size: 21px; }
+.publication-category-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; margin-top: 30px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.publication-category { font-size: 17px; font-weight: 600; color: var(--muted); }
 .publications { margin-top: 24px; }
-.journal-publication { display: block; }
+.paper-visual-pending { min-height: 180px; }
 .publication { display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 28px; padding: 24px 0; border-bottom: 1px solid var(--line); align-items: start; }
 .publication:first-child { padding-top: 0; }
 .publication:last-child { border-bottom: 0; padding-bottom: 0; }
@@ -69,15 +70,15 @@ h3, h4 { font-size: 20px; line-height: 1.4; font-weight: 600; }
 .authors strong { color: var(--ink); }
 .paper-keywords { font-size: 15px; color: var(--muted); margin-top: 10px; }
 .paper-links { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 10px; font-size: 16px; }
-.publication-note { font-size: 15px; color: var(--muted); margin-top: 10px; }
+.publication-note { font-size: 14px; color: var(--muted); margin-left: auto; text-align: right; }
 .concept { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px 8px; min-height: 180px; border: 1px solid var(--line); }
 .concept-overline, .concept-target { font-size: 15px; text-align: center; }
 .concept-pair { display: flex; align-items: center; gap: 18px; font-size: 24px; margin-top: 12px; }
 .concept-line { width: 1px; height: 14px; background: #888; margin: 10px 0; }
 .latent-units { display: flex; gap: 18px; font-size: 24px; margin-top: 12px; }
 .timeline { margin-top: 20px; }
-.timeline-entry { display: grid; grid-template-columns: 96px minmax(0, 1fr) max-content; gap: 40px; margin-top: 26px; align-items: start; }
-.timeline-copy { min-width: 0; }
+.timeline-entry { display: grid; grid-template-columns: 130px minmax(0, 1fr) max-content; column-gap: 24px; margin-top: 26px; align-items: start; }
+.timeline-copy { min-width: 0; margin-left: 176px; }
 .current-status { display: block; margin-top: 4px; }
 .date-range { font-size: 15px; color: var(--muted); padding-top: 3px; text-align: right; white-space: nowrap; }
 .role { font-size: 17px; margin-top: 3px; }
@@ -89,14 +90,16 @@ h3, h4 { font-size: 20px; line-height: 1.4; font-weight: 600; }
 .patent-list h3 { font-size: 17px; line-height: 1.55; font-weight: 500; }
 .patent-list p { font-size: 15px; margin-top: 6px; color: var(--muted); }
 .patent-search { font-size: 15px; }
-.closing { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; border-top: 1px solid var(--line); padding: 24px 0; }
-.closing p { font-size: 20px; font-weight: 600; }
 .site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding: 20px 0; font-size: 15px; color: var(--muted); }
 .image-fallback { display: flex; align-items: center; justify-content: center; padding: 16px; min-height: 160px; font-size: 15px; background: #f5f5f5; }
+@media (max-width: 1000px) {
+  .timeline-copy { margin-left: 64px; }
+}
 @media (max-width: 800px) {
+  .timeline-copy { margin-left: 0; }
   .hero { grid-template-columns: minmax(0, 1fr) 240px; gap: 24px; }
   .publication { grid-template-columns: 200px minmax(0, 1fr); gap: 24px; }
-  .timeline-entry { grid-template-columns: 80px minmax(0, 1fr); gap: 8px 20px; }
+  .timeline-entry { grid-template-columns: 80px minmax(0, 1fr); gap: 8px 40px; }
   .school-logo, .company-logo { width: 80px; height: 80px; grid-row: span 2; }
   .date-range { grid-column: 2; justify-self: end; }
 }
@@ -113,6 +116,7 @@ h3, h4 { font-size: 20px; line-height: 1.4; font-weight: 600; }
   .news-list li { grid-template-columns: 1fr; gap: 2px; }
   .publication { grid-template-columns: 1fr; gap: 16px; }
   .paper-visual { max-width: 360px; }
+  .paper-visual-pending { display: none; }
   .paper-visual img { height: auto; max-height: 240px; }
   .timeline-entry { grid-template-columns: 72px minmax(0, 1fr); gap: 8px 28px; }
   .school-logo, .company-logo { width: 72px; height: 72px; }
@@ -121,7 +125,7 @@ h3, h4 { font-size: 20px; line-height: 1.4; font-weight: 600; }
 }
 @media print {
   .wrap { width: 100%; }
-  .site-header, .skip-link, .closing, .site-footer { display: none; }
+  .site-header, .skip-link, .site-footer { display: none; }
   .hero { padding-top: 0; }
   .section { padding: 18px 0; }
   .publication, .timeline-entry, .patent-list li { break-inside: avoid; }

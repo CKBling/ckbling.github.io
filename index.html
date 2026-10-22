@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://ckbling.github.io/">
   <link rel="canonical" href="https://ckbling.github.io/">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/site.css?v=20261022-layout2">
   <script src="assets/site.js" defer></script>
   <title>Kyobin Choo — AI Researcher</title>
 </head>
@@ -20,7 +20,7 @@
   <header class="site-header wrap">
     <a class="wordmark" href="#about" aria-label="Kyobin Choo, back to introduction"><svg class="piano-mark" viewBox="0 0 56 36" aria-hidden="true"><rect x="1" y="1" width="54" height="34" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 2v32M19 2v32M28 2v32M37 2v32M46 2v32" stroke="currentColor"/><path d="M7 2h6v20H7zM16 2h6v20h-6zM34 2h6v20h-6zM43 2h6v20h-6z" fill="currentColor"/></svg></a>
     <nav aria-label="Main navigation">
-      <a href="#research">Research</a><a href="#experience">Experience</a><a href="#patents">Patents</a><a class="nav-cv" href="https://drive.google.com/file/d/1jb87jUH81ieTAjD-vCutzxhlF3PKn7EB/view?usp=sharing">CV</a>
+      <a href="#research">Research</a><a href="#experience">Experience</a><a href="#patents">Patents</a>
     </nav>
   </header>
   <main id="main" class="wrap">
@@ -42,7 +42,7 @@
         </div>
         <figcaption><span class="portrait-role">Ph.D. student @ Yonsei Univ.</span><span class="portrait-detail"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#location"></use></svg>Seoul, South Korea</span><a class="portrait-detail" href="mailto:chu@yonsei.ac.kr"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#email"></use></svg>chu [at] yonsei [dot] ac [dot] kr</a></figcaption>
       </figure>
-      <ul class="interests" aria-label="Research interests" tabindex="0"><li>Medical imaging analysis</li><li>Diffusion like model</li><li>Schrödinger bridge</li><li>Image registration</li><li>Video generation</li></ul>
+      <ul class="interests" aria-label="Research interests" tabindex="0"><li>Medical imaging analysis</li><li>Diffusion-like / Schrödinger bridge models</li><li>Image registration</li><li>Video generation</li></ul>
     </section>
 
     <section id="news" class="section news-section" aria-labelledby="news-title">
@@ -64,8 +64,7 @@
 
     <section id="research" class="section research-section" aria-labelledby="research-title">
       <div class="section-heading"><div class="section-label"><h2 id="research-title">Selected publications</h2></div><a class="quiet-link" href="https://drive.google.com/file/d/1jb87jUH81ieTAjD-vCutzxhlF3PKn7EB/view?usp=sharing">Full list in CV <span aria-hidden="true">↗</span></a></div>
-      <p class="publication-note">* Equal contribution.</p>
-      <h3 class="publication-category">Computer Vision &amp; Machine Learning</h3>
+      <div class="publication-category-heading"><h3 class="publication-category">Computer Vision &amp; Machine Learning</h3><p class="publication-note">* Equal contribution.</p></div>
       <div class="publications">
         <article id="qwerty" class="publication">
           <a class="paper-visual" href="https://arxiv.org/abs/2607.01869" aria-label="Read QWERTY on arXiv">
@@ -98,19 +97,23 @@
           <div class="paper-copy"><p class="venue">MICCAI <span>2024</span><span class="distinction">Early accept</span></p><h4><a href="https://arxiv.org/abs/2407.05059">Slice-Consistent 3D Volumetric Brain CT-to-MRI Translation with 2D Brownian Bridge Diffusion Model</a></h4><p class="authors"><strong>Kyobin Choo</strong>, Youngjun Jun, Mijin Yun, Seong Jae Hwang</p><p class="paper-keywords">CT-to-MRI translation · Brownian bridges · Slice-consistent 3D generation</p><div class="paper-links"><a href="https://arxiv.org/abs/2407.05059">arXiv</a><a href="https://github.com/MICV-yonsei/CT2MRI">Code</a></div></div>
         </article>
       </div>
-      <h3 class="publication-category">Clinical &amp; Medical Imaging Journals</h3>
+      <div class="publication-category-heading"><h3 class="publication-category">Clinical &amp; Medical Imaging Journals</h3><p class="publication-note">* Equal contribution.</p></div>
       <div class="publications clinical-publications">
         <article id="centiloid" class="publication journal-publication">
-          <div class="paper-copy"><p class="venue">Alzheimer’s Research &amp; Therapy <span>2025</span></p><h4><a href="https://doi.org/10.1186/s13195-025-01860-1">Centiloid Values from Deep Learning-based CT Parcellation: A Valid Alternative to FreeSurfer</a></h4><p class="authors">Yeo Jun Yoon*, Seungbeom Seo*, Sangwon Lee, Hyunkeong Lim, <strong>Kyobin Choo</strong>, Daesung Kim, Hyunkyung Han, Minjae So, Hosung Kang, Seongjin Kang, Dongwoo Kim, Young-gun Lee, Dongho Shin, Tae Joo Jeon, Mijin Yun</p><p class="paper-keywords">CT-based brain parcellation · Centiloid quantification · MRI-free amyloid PET</p></div>
+          <div class="paper-visual paper-visual-pending" aria-hidden="true"><!-- Future image: assets/images/publications/clinical/centiloid.png --></div>
+          <div class="paper-copy"><p class="venue">Alzheimer’s Research &amp; Therapy <span>2025</span><span class="distinction">IF 8.9 (2025)</span></p><h4><a href="https://doi.org/10.1186/s13195-025-01860-1">Centiloid Values from Deep Learning-based CT Parcellation: A Valid Alternative to FreeSurfer</a></h4><p class="authors">Yeo Jun Yoon*, Seungbeom Seo*, Sangwon Lee, Hyunkeong Lim, <strong>Kyobin Choo</strong>, Daesung Kim, Hyunkyung Han, Minjae So, Hosung Kang, Seongjin Kang, Dongwoo Kim, Young-gun Lee, Dongho Shin, Tae Joo Jeon, Mijin Yun</p><p class="paper-keywords">CT-based brain parcellation · Centiloid quantification · MRI-free amyloid PET</p><div class="paper-links"><a href="https://doi.org/10.1186/s13195-025-01860-1">Paper</a></div></div>
         </article>
         <article id="pet-denoising" class="publication journal-publication">
-          <div class="paper-copy"><p class="venue">Clinical Nuclear Medicine <span>2025</span></p><h4><a href="https://doi.org/10.1097/RLU.0000000000006040">GAN-based Denoising for Scan Time Reduction and Motion Correction of 18F FP-CIT PET/CT: A Multicenter External Validation Study</a></h4><p class="authors">Hyunkyung Han, <strong>Kyobin Choo</strong>, Tae Joo Jeon, Sangwon Lee, Seungbeom Seo, Dongwoo Kim, Sun Jung Kim, Suk Hyun Lee, Mijin Yun</p><p class="paper-keywords">PET denoising · Scan-time reduction · Motion correction · Multicenter validation</p></div>
+          <div class="paper-visual paper-visual-pending" aria-hidden="true"><!-- Future image: assets/images/publications/clinical/pet-denoising.png --></div>
+          <div class="paper-copy"><p class="venue">Clinical Nuclear Medicine <span>2025</span><span class="distinction">IF 9.6 (2025)</span></p><h4><a href="https://doi.org/10.1097/RLU.0000000000006040">GAN-based Denoising for Scan Time Reduction and Motion Correction of 18F FP-CIT PET/CT: A Multicenter External Validation Study</a></h4><p class="authors">Hyunkyung Han, <strong>Kyobin Choo</strong>, Tae Joo Jeon, Sangwon Lee, Seungbeom Seo, Dongwoo Kim, Sun Jung Kim, Suk Hyun Lee, Mijin Yun</p><p class="paper-keywords">PET denoising · Scan-time reduction · Motion correction · Multicenter validation</p><div class="paper-links"><a href="https://doi.org/10.1097/RLU.0000000000006040">Paper</a></div></div>
         </article>
         <article id="pet-quantification" class="publication journal-publication">
-          <div class="paper-copy"><p class="venue">European Journal of Nuclear Medicine and Molecular Imaging <span>2025</span></p><h4><a href="https://doi.org/10.1007/s00259-025-07132-2">Automated Quantification of Brain PET in PET/CT Using Deep Learning-based CT-to-MR Translation: A Feasibility Study</a></h4><p class="authors">Daesung Kim*, <strong>Kyobin Choo*</strong>, Sangwon Lee, Seongjin Kang, Mijin Yun, Jaewon Yang</p><p class="paper-keywords">CT-to-MR synthesis · Regional brain segmentation · Automated PET quantification</p></div>
+          <div class="paper-visual paper-visual-pending" aria-hidden="true"><!-- Future image: assets/images/publications/clinical/pet-quantification.png --></div>
+          <div class="paper-copy"><p class="venue">European Journal of Nuclear Medicine and Molecular Imaging <span>2025</span><span class="distinction">IF 7.6 (2025)</span></p><h4><a href="https://doi.org/10.1007/s00259-025-07132-2">Automated Quantification of Brain PET in PET/CT Using Deep Learning-based CT-to-MR Translation: A Feasibility Study</a></h4><p class="authors">Daesung Kim*, <strong>Kyobin Choo*</strong>, Sangwon Lee, Seongjin Kang, Mijin Yun, Jaewon Yang</p><p class="paper-keywords">CT-to-MR synthesis · Regional brain segmentation · Automated PET quantification</p><div class="paper-links"><a href="https://doi.org/10.1007/s00259-025-07132-2">Paper</a></div></div>
         </article>
         <article id="amyloid-parcellation" class="publication journal-publication">
-          <div class="paper-copy"><p class="venue">Clinical Nuclear Medicine <span>2025</span></p><h4><a href="https://doi.org/10.1097/RLU.0000000000005652">Deep Learning–Based Precontrast CT Parcellation for MRI-Free Brain Amyloid PET Quantification</a></h4><p class="authors"><strong>Kyobin Choo</strong>, Jaehoon Joo, Sangwon Lee, Daesung Kim, Hyunkeong Lim, Dongwoo Kim, Seongjin Kang, Seong Jae Hwang, Mijin Yun</p><p class="paper-keywords">Precontrast CT parcellation · MRI-free amyloid quantification · Brain PET/CT</p></div>
+          <div class="paper-visual paper-visual-pending" aria-hidden="true"><!-- Future image: assets/images/publications/clinical/amyloid-parcellation.png --></div>
+          <div class="paper-copy"><p class="venue">Clinical Nuclear Medicine <span>2025</span><span class="distinction">IF 9.6 (2025)</span></p><h4><a href="https://doi.org/10.1097/RLU.0000000000005652">Deep Learning–Based Precontrast CT Parcellation for MRI-Free Brain Amyloid PET Quantification</a></h4><p class="authors"><strong>Kyobin Choo</strong>, Jaehoon Joo, Sangwon Lee, Daesung Kim, Hyunkeong Lim, Dongwoo Kim, Seongjin Kang, Seong Jae Hwang, Mijin Yun</p><p class="paper-keywords">Precontrast CT parcellation · MRI-free amyloid quantification · Brain PET/CT</p><div class="paper-links"><a href="https://doi.org/10.1097/RLU.0000000000005652">Paper</a></div></div>
         </article>
       </div>
     </section>
@@ -119,7 +122,7 @@
       <div class="section-label"><h2 id="experience-title">Industry experience</h2></div>
       <div class="timeline">
         <article class="timeline-entry"><span class="company-logo newcurem-logo"><img src="assets/images/newcurem_logo.png" alt="Newcure M logo" width="449" height="88" loading="lazy"></span><div class="timeline-copy"><h3>Newcure M Inc.</h3><p class="role">AI/SW R&amp;D Team Leader (CTO)</p><p class="entry-detail">Led development of brain PET analysis and CT-based neurological imaging solutions, low-dose PET reconstruction, and PSMA tumor detection. Worked on Korean medical-device regulatory approvals.</p></div><p class="date-range">Jun 2022 — Jan 2025</p></article>
-        <article class="timeline-entry"><span class="company-logo samsung-logo"><img src="assets/images/samsung_logo.avif" alt="Samsung logo" width="720" height="600" loading="lazy"></span><div class="timeline-copy"><h3>Samsung Electronics</h3><p class="role">Intern · System LSI Division</p><p class="entry-detail">CPU scheduler optimization for application processors.</p></div><p class="date-range">Aug 2021 — Dec 2021</p></article>
+        <article class="timeline-entry"><span class="company-logo samsung-logo"><img src="assets/images/samsung_logo.avif?v=20261022" alt="Samsung logo" width="720" height="600" loading="lazy"></span><div class="timeline-copy"><h3>Samsung Electronics</h3><p class="role">Intern · System LSI Division</p><p class="entry-detail">CPU scheduler optimization for application processors.</p></div><p class="date-range">Aug 2021 — Dec 2021</p></article>
       </div>
     </section>
 
@@ -134,11 +137,10 @@
         <li><span class="patent-year">2024</span><div><h3><a href="https://patents.google.com/patent/KR102644343B1/ko">Method and System for Providing Information for Diagnosing Parkinson’s Disease Based on Machine Learning Model</a></h3><p>Kyobin Choo <span>· KR 10-2644343 · Granted</span></p></div></li>
         <li><span class="patent-year">2024</span><div><h3><a href="https://patents.google.com/patent/KR102631389B1/ko">Method and System for Generating MRI Images Based on CT Images</a></h3><p>Kyobin Choo <span>· KR 10-2631389 · Granted</span></p></div></li>
         <li><span class="patent-year">2023</span><div><h3><a href="https://patents.google.com/patent/KR102593628B1/en">Method and System for Generating High-quality Medical Image</a></h3><p>Kyobin Choo <span>· KR 10-2593628 · Granted</span></p></div></li>
-        <li><span class="patent-year">2026</span><div><h3><a href="https://patents.google.com/patent/KR20240105189A/en">Method and System for Quantitative Analysis of Brain Imaging for Amyloid Measurement</a></h3><p>Mijin Yun, Kyobin Choo <span>· Granted · Application No. KR 10-2023-0084727</span></p></div></li>
+        <li><span class="patent-year">2023</span><div><h3><a href="https://patents.google.com/patent/KR20240105189A/en">Method and System for Quantitative Analysis of Brain Imaging for Amyloid Measurement</a></h3><p>Mijin Yun, Kyobin Choo <span>· KR 10-2023-0084727 · Application</span></p></div></li>
       </ol>
     </section>
-    <section class="closing" aria-label="Contact"><p>Let’s talk research.</p><a href="mailto:chu@yonsei.ac.kr">chu [at] yonsei [dot] ac [dot] kr</a></section>
   </main>
-  <footer class="site-footer wrap"><span>© 2026 Kyobin Choo</span><span>Seoul · Yonsei University</span><a href="#about">Back to top</a></footer>
+  <footer class="site-footer wrap"><span>© 2026 Kyobin Choo</span><span>Last updated: <time datetime="2026-10">October 2026</time></span><a href="#about">Back to top</a></footer>
 </body>
 </html>
