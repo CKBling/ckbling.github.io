@@ -80,7 +80,7 @@ h3, h4 { font-size: 20px; line-height: 1.4; font-weight: 600; }
 .latent-units { display: flex; gap: 18px; font-size: 24px; margin-top: 12px; }
 .timeline { margin-top: 20px; }
 .timeline-entry { display: grid; grid-template-columns: 130px minmax(0, 1fr) max-content; column-gap: 24px; margin-top: 26px; align-items: start; }
-.timeline-copy { min-width: 0; margin-left: 42px; }
+.timeline-copy { min-width: 0; margin-left: 20px; }
 .current-status { display: block; margin-top: 4px; }
 .date-range { font-size: 15px; color: var(--muted); padding-top: 3px; text-align: right; white-space: nowrap; }
 .role { font-size: 17px; margin-top: 3px; }
