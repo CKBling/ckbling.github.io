@@ -34,7 +34,13 @@ h1 { font-size: 38px; line-height: 1.2; font-weight: 600; }
 .portrait { padding-top: 6px; }
 .portrait-frame { overflow: hidden; }
 .portrait img { width: 100%; height: auto; }
-.portrait figcaption { font-size: 15px; color: var(--muted); margin-top: 8px; }
+.portrait figcaption { display: grid; gap: 6px; font-size: 15px; color: var(--muted); margin-top: 12px; }
+.icon { width: 18px; height: 18px; flex: 0 0 18px; fill: currentColor; }
+.contact-links a, .portrait-detail { display: inline-flex; align-items: center; gap: 7px; }
+.portrait-detail { white-space: nowrap; }
+.timeline-entry.education-entry { grid-template-columns: 72px 220px minmax(0, 1fr); align-items: start; }
+.school-logo { display: block; width: 72px; height: 72px; overflow: hidden; position: relative; }
+.school-logo img { position: absolute; width: 160%; max-width: none; height: auto; left: -29%; top: -43%; }
 .section { border-top: 1px solid var(--line); padding: 28px 0; }
 h2 { font-size: 26px; line-height: 1.35; font-weight: 600; }
 .section-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px 24px; }
@@ -86,6 +92,9 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; }
   .hero { grid-template-columns: minmax(0, 1fr) 160px; gap: 28px; }
   .publication { grid-template-columns: 200px minmax(0, 1fr); gap: 24px; }
   .timeline-entry { grid-template-columns: 180px minmax(0, 1fr); }
+  .timeline-entry.education-entry { grid-template-columns: 64px minmax(0, 1fr); gap: 6px 18px; }
+  .education-entry .school-logo { grid-row: span 2; width: 64px; height: 64px; }
+  .education-entry > div { grid-column: 2; }
 }
 @media (max-width: 600px) {
   .wrap { width: calc(100% - 36px); }
@@ -94,13 +103,15 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; }
   .hero { display: flex; flex-direction: column; gap: 24px; padding: 28px 0; }
   h1 { font-size: 34px; }
   .portrait { width: 150px; padding: 0; }
-  .portrait figcaption { white-space: nowrap; }
+  .portrait figcaption { width: max-content; max-width: calc(100vw - 36px); }
   h2 { font-size: 24px; }
   .news-list li { grid-template-columns: 1fr; gap: 2px; }
   .publication { grid-template-columns: 1fr; gap: 16px; }
   .paper-visual { max-width: 360px; }
   .paper-visual img { height: auto; max-height: 240px; }
   .timeline-entry { grid-template-columns: 1fr; gap: 6px; }
+  .timeline-entry.education-entry { grid-template-columns: 56px minmax(0, 1fr); gap: 6px 14px; }
+  .education-entry .school-logo { width: 56px; height: 56px; }
   .date-range span { display: inline; margin-left: 8px; }
   .patent-list li { grid-template-columns: 1fr; gap: 5px; }
   .patent-list p span { display: block; }
