@@ -78,7 +78,7 @@ h3, h4 { font-size: 20px; line-height: 1.4; font-weight: 600; }
 .latent-units { display: flex; gap: 18px; font-size: 24px; margin-top: 12px; }
 .timeline { margin-top: 20px; }
 .timeline-entry { display: grid; grid-template-columns: 130px minmax(0, 1fr) max-content; column-gap: 24px; margin-top: 26px; align-items: start; }
-.timeline-copy { min-width: 0; margin-left: 176px; }
+.timeline-copy { min-width: 0; margin-left: 42px; }
 .current-status { display: block; margin-top: 4px; }
 .date-range { font-size: 15px; color: var(--muted); padding-top: 3px; text-align: right; white-space: nowrap; }
 .role { font-size: 17px; margin-top: 3px; }
@@ -93,13 +93,13 @@ h3, h4 { font-size: 20px; line-height: 1.4; font-weight: 600; }
 .site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding: 20px 0; font-size: 15px; color: var(--muted); }
 .image-fallback { display: flex; align-items: center; justify-content: center; padding: 16px; min-height: 160px; font-size: 15px; background: #f5f5f5; }
 @media (max-width: 1000px) {
-  .timeline-copy { margin-left: 64px; }
+  .timeline-copy { margin-left: 5px; }
 }
 @media (max-width: 800px) {
   .timeline-copy { margin-left: 0; }
   .hero { grid-template-columns: minmax(0, 1fr) 240px; gap: 24px; }
   .publication { grid-template-columns: 200px minmax(0, 1fr); gap: 24px; }
-  .timeline-entry { grid-template-columns: 80px minmax(0, 1fr); gap: 8px 40px; }
+  .timeline-entry { grid-template-columns: 80px minmax(0, 1fr); gap: 8px 16px; }
   .school-logo, .company-logo { width: 80px; height: 80px; grid-row: span 2; }
   .date-range { grid-column: 2; justify-self: end; }
 }
@@ -118,7 +118,7 @@ h3, h4 { font-size: 20px; line-height: 1.4; font-weight: 600; }
   .paper-visual { max-width: 360px; }
   .paper-visual-pending { display: none; }
   .paper-visual img { height: auto; max-height: 240px; }
-  .timeline-entry { grid-template-columns: 72px minmax(0, 1fr); gap: 8px 28px; }
+  .timeline-entry { grid-template-columns: 72px minmax(0, 1fr); gap: 8px 12px; }
   .school-logo, .company-logo { width: 72px; height: 72px; }
   .patent-list li { grid-template-columns: 1fr; gap: 5px; }
   .patent-list p span { display: block; }

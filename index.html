@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://ckbling.github.io/">
   <link rel="canonical" href="https://ckbling.github.io/">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css?v=20261022-layout2">
+  <link rel="stylesheet" href="assets/site.css?v=20261022-layout3">
   <script src="assets/site.js" defer></script>
   <title>Kyobin Choo — AI Researcher</title>
 </head>
@@ -42,15 +42,20 @@
         </div>
         <figcaption><span class="portrait-role">Ph.D. student @ Yonsei Univ.</span><span class="portrait-detail"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#location"></use></svg>Seoul, South Korea</span><a class="portrait-detail" href="mailto:chu@yonsei.ac.kr"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#email"></use></svg>chu [at] yonsei [dot] ac [dot] kr</a></figcaption>
       </figure>
-      <ul class="interests" aria-label="Research interests" tabindex="0"><li>Medical imaging analysis</li><li>Diffusion-like / Schrödinger bridge models</li><li>Image registration</li><li>Video generation</li></ul>
+      <ul class="interests" aria-label="Research interests" tabindex="0"><li>Medical imaging analysis</li><li>Schrödinger bridge</li><li>Image registration</li><li>Video generation</li></ul>
     </section>
 
     <section id="news" class="section news-section" aria-labelledby="news-title">
       <div class="section-label"><h2 id="news-title">News</h2></div>
       <ul class="news-list">
-        <li><time datetime="2026">2026</time><p><a href="#qwerty">QWERTY</a> and <a href="#halo">HALO</a> appear at <strong>ECCV 2026</strong>, exploring training-free control of video diffusion transformers.</p></li>
-        <li><time datetime="2025-11">Nov 2025</time><p>Received the <strong>AI Seoul Tech. Scholarship</strong> from the Seoul Scholarship Foundation.</p></li>
-        <li><time datetime="2025">2025</time><p><a href="#m2m">M2M-Reg</a> appears at <strong>MICCAI 2025</strong>, tackling registration across heterogeneous medical images.</p></li>
+        <li><time datetime="2026">2026</time><p>Two papers of ours were accepted to <strong>ECCV 2026</strong>!</p></li>
+        <li><time datetime="2025-11">Nov. 2025</time><p>Honored to receive the <strong>AI Seoul Tech. Scholarship</strong> from the Seoul Scholarship Foundation!</p></li>
+        <li><time datetime="2025-09">Sep. 2025</time><p>I performed as the keyboardist in a band at the <strong>MICCAI 2025 Gala Dinner</strong>! <a href="https://www.atnnews.co.kr/news/articleView.html?idxno=106188">ATN News</a></p></li>
+        <li><time datetime="2025">2025</time><p>Two papers of ours were accepted to <strong>MICCAI 2025</strong>!</p></li>
+        <li><time datetime="2025">2025</time><p>Our paper on <a href="#amyloid-parcellation">MRI-free brain amyloid PET quantification</a> was accepted to <strong>Clinical Nuclear Medicine</strong>!</p></li>
+        <li><time datetime="2025">2025</time><p>Our paper on <a href="#pet-quantification">automated brain PET quantification using CT-to-MR translation</a>, which I co-first-authored, was accepted to <strong>EJNMMI</strong>!</p></li>
+        <li><time datetime="2025">2025</time><p>Our paper <a href="#disentangling">Disentangling Disentangled Representations</a> was accepted to <strong>WACV 2025</strong>!</p></li>
+        <li><time datetime="2024">2024</time><p>Our paper <a href="#ct2mri">CT2MRI</a> was accepted to <strong>MICCAI 2024</strong> as an <strong>early accept</strong>!</p></li>
       </ul>
     </section>
 
@@ -101,19 +106,19 @@
       <div class="publications clinical-publications">
         <article id="centiloid" class="publication journal-publication">
           <div class="paper-visual paper-visual-pending" aria-hidden="true"><!-- Future image: assets/images/publications/clinical/centiloid.png --></div>
-          <div class="paper-copy"><p class="venue">Alzheimer’s Research &amp; Therapy <span>2025</span><span class="distinction">IF 8.9 (2025)</span></p><h4><a href="https://doi.org/10.1186/s13195-025-01860-1">Centiloid Values from Deep Learning-based CT Parcellation: A Valid Alternative to FreeSurfer</a></h4><p class="authors">Yeo Jun Yoon*, Seungbeom Seo*, Sangwon Lee, Hyunkeong Lim, <strong>Kyobin Choo</strong>, Daesung Kim, Hyunkyung Han, Minjae So, Hosung Kang, Seongjin Kang, Dongwoo Kim, Young-gun Lee, Dongho Shin, Tae Joo Jeon, Mijin Yun</p><p class="paper-keywords">CT-based brain parcellation · Centiloid quantification · MRI-free amyloid PET</p><div class="paper-links"><a href="https://doi.org/10.1186/s13195-025-01860-1">Paper</a></div></div>
+          <div class="paper-copy"><p class="venue">Alzheimer’s Research &amp; Therapy <span>2025</span><span class="distinction">IF 8.9</span></p><h4><a href="https://doi.org/10.1186/s13195-025-01860-1">Centiloid Values from Deep Learning-based CT Parcellation: A Valid Alternative to FreeSurfer</a></h4><p class="authors">Yeo Jun Yoon*, Seungbeom Seo*, Sangwon Lee, Hyunkeong Lim, <strong>Kyobin Choo</strong>, Daesung Kim, Hyunkyung Han, Minjae So, Hosung Kang, Seongjin Kang, Dongwoo Kim, Young-gun Lee, Dongho Shin, Tae Joo Jeon, Mijin Yun</p><p class="paper-keywords">CT-based brain parcellation · Centiloid quantification · MRI-free amyloid PET</p><div class="paper-links"><a href="https://doi.org/10.1186/s13195-025-01860-1">Paper</a></div></div>
         </article>
         <article id="pet-denoising" class="publication journal-publication">
           <div class="paper-visual paper-visual-pending" aria-hidden="true"><!-- Future image: assets/images/publications/clinical/pet-denoising.png --></div>
-          <div class="paper-copy"><p class="venue">Clinical Nuclear Medicine <span>2025</span><span class="distinction">IF 9.6 (2025)</span></p><h4><a href="https://doi.org/10.1097/RLU.0000000000006040">GAN-based Denoising for Scan Time Reduction and Motion Correction of 18F FP-CIT PET/CT: A Multicenter External Validation Study</a></h4><p class="authors">Hyunkyung Han, <strong>Kyobin Choo</strong>, Tae Joo Jeon, Sangwon Lee, Seungbeom Seo, Dongwoo Kim, Sun Jung Kim, Suk Hyun Lee, Mijin Yun</p><p class="paper-keywords">PET denoising · Scan-time reduction · Motion correction · Multicenter validation</p><div class="paper-links"><a href="https://doi.org/10.1097/RLU.0000000000006040">Paper</a></div></div>
+          <div class="paper-copy"><p class="venue">Clinical Nuclear Medicine <span>2025</span><span class="distinction">IF 9.6</span></p><h4><a href="https://doi.org/10.1097/RLU.0000000000006040">GAN-based Denoising for Scan Time Reduction and Motion Correction of 18F FP-CIT PET/CT: A Multicenter External Validation Study</a></h4><p class="authors">Hyunkyung Han, <strong>Kyobin Choo</strong>, Tae Joo Jeon, Sangwon Lee, Seungbeom Seo, Dongwoo Kim, Sun Jung Kim, Suk Hyun Lee, Mijin Yun</p><p class="paper-keywords">PET denoising · Scan-time reduction · Motion correction · Multicenter validation</p><div class="paper-links"><a href="https://doi.org/10.1097/RLU.0000000000006040">Paper</a></div></div>
         </article>
         <article id="pet-quantification" class="publication journal-publication">
           <div class="paper-visual paper-visual-pending" aria-hidden="true"><!-- Future image: assets/images/publications/clinical/pet-quantification.png --></div>
-          <div class="paper-copy"><p class="venue">European Journal of Nuclear Medicine and Molecular Imaging <span>2025</span><span class="distinction">IF 7.6 (2025)</span></p><h4><a href="https://doi.org/10.1007/s00259-025-07132-2">Automated Quantification of Brain PET in PET/CT Using Deep Learning-based CT-to-MR Translation: A Feasibility Study</a></h4><p class="authors">Daesung Kim*, <strong>Kyobin Choo*</strong>, Sangwon Lee, Seongjin Kang, Mijin Yun, Jaewon Yang</p><p class="paper-keywords">CT-to-MR synthesis · Regional brain segmentation · Automated PET quantification</p><div class="paper-links"><a href="https://doi.org/10.1007/s00259-025-07132-2">Paper</a></div></div>
+          <div class="paper-copy"><p class="venue">European Journal of Nuclear Medicine and Molecular Imaging <span>2025</span><span class="distinction">IF 7.6</span></p><h4><a href="https://doi.org/10.1007/s00259-025-07132-2">Automated Quantification of Brain PET in PET/CT Using Deep Learning-based CT-to-MR Translation: A Feasibility Study</a></h4><p class="authors">Daesung Kim*, <strong>Kyobin Choo*</strong>, Sangwon Lee, Seongjin Kang, Mijin Yun, Jaewon Yang</p><p class="paper-keywords">CT-to-MR synthesis · Regional brain segmentation · Automated PET quantification</p><div class="paper-links"><a href="https://doi.org/10.1007/s00259-025-07132-2">Paper</a></div></div>
         </article>
         <article id="amyloid-parcellation" class="publication journal-publication">
           <div class="paper-visual paper-visual-pending" aria-hidden="true"><!-- Future image: assets/images/publications/clinical/amyloid-parcellation.png --></div>
-          <div class="paper-copy"><p class="venue">Clinical Nuclear Medicine <span>2025</span><span class="distinction">IF 9.6 (2025)</span></p><h4><a href="https://doi.org/10.1097/RLU.0000000000005652">Deep Learning–Based Precontrast CT Parcellation for MRI-Free Brain Amyloid PET Quantification</a></h4><p class="authors"><strong>Kyobin Choo</strong>, Jaehoon Joo, Sangwon Lee, Daesung Kim, Hyunkeong Lim, Dongwoo Kim, Seongjin Kang, Seong Jae Hwang, Mijin Yun</p><p class="paper-keywords">Precontrast CT parcellation · MRI-free amyloid quantification · Brain PET/CT</p><div class="paper-links"><a href="https://doi.org/10.1097/RLU.0000000000005652">Paper</a></div></div>
+          <div class="paper-copy"><p class="venue">Clinical Nuclear Medicine <span>2025</span><span class="distinction">IF 9.6</span></p><h4><a href="https://doi.org/10.1097/RLU.0000000000005652">Deep Learning–Based Precontrast CT Parcellation for MRI-Free Brain Amyloid PET Quantification</a></h4><p class="authors"><strong>Kyobin Choo</strong>, Jaehoon Joo, Sangwon Lee, Daesung Kim, Hyunkeong Lim, Dongwoo Kim, Seongjin Kang, Seong Jae Hwang, Mijin Yun</p><p class="paper-keywords">Precontrast CT parcellation · MRI-free amyloid quantification · Brain PET/CT</p><div class="paper-links"><a href="https://doi.org/10.1097/RLU.0000000000005652">Paper</a></div></div>
         </article>
       </div>
     </section>
