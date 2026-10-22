@@ -27,6 +27,7 @@ strong { font-weight: 600; }
 .site-header nav { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: 15px; }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 40px; padding: 36px 0; align-items: start; }
 h1 { font-size: 38px; line-height: 1.2; font-weight: 600; }
+.name-korean { margin-left: 0.65em; color: var(--muted); font-size: 0.46em; font-weight: 400; white-space: nowrap; vertical-align: 0.08em; }
 .bio { margin-top: 12px; }
 .interests { display: flex; flex-wrap: nowrap; gap: 18px; grid-column: 1 / -1; width: 100%; min-width: 0; overflow-x: auto; padding: 0 0 4px; margin: 0; list-style: none; font-size: 16px; color: var(--muted); }
 .interests li { flex: 0 0 auto; }
