@@ -12,7 +12,7 @@
 * { box-sizing: border-box; }
 html { scroll-padding-top: 20px; }
 body { margin: 0; }
-p, h1, h2, h3, figure { margin: 0; }
+p, h1, h2, h3, h4, figure { margin: 0; }
 a { color: var(--accent); text-decoration: none; text-underline-offset: 3px; }
 a:hover { text-decoration: underline; }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
@@ -28,12 +28,14 @@ strong { font-weight: 600; }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 40px; padding: 36px 0; align-items: start; }
 h1 { font-size: 38px; line-height: 1.2; font-weight: 600; }
 .bio { margin-top: 12px; }
-.interests { display: flex; flex-wrap: wrap; gap: 4px 18px; padding: 0; margin: 18px 0; list-style: none; font-size: 15px; color: var(--muted); }
-.contact-links { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 16px; margin-top: 18px; }
+.interests { display: flex; flex-wrap: nowrap; gap: 18px; grid-column: 1 / -1; width: 100%; min-width: 0; overflow-x: auto; padding: 0 0 4px; margin: 0; list-style: none; font-size: 16px; color: var(--muted); }
+.interests li { flex: 0 0 auto; }
+.interests:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.contact-links { display: flex; flex-wrap: wrap; gap: 8px 32px; font-size: 16px; margin-top: 18px; }
 .portrait { padding-top: 0; }
 .portrait-frame { overflow: hidden; border-radius: 50%; width: 220px; height: 220px; position: relative; margin-inline: auto; }
-.portrait img { position: absolute; width: 120%; max-width: none; height: auto; left: -10%; top: -10%; }
-.portrait figcaption { display: grid; gap: 6px; font-size: 15px; color: var(--muted); margin-top: 12px; }
+.portrait img { position: absolute; width: 100%; max-width: none; height: 100%; object-fit: cover; object-position: center top; left: 0; top: 0; }
+.portrait figcaption { display: grid; justify-items: center; text-align: center; gap: 6px; font-size: 15px; color: var(--muted); margin-top: 12px; }
 .icon { width: 18px; height: 18px; flex: 0 0 18px; fill: currentColor; }
 .contact-links a, .portrait-detail { display: inline-flex; align-items: center; gap: 7px; }
 .portrait-detail { white-space: normal; }
@@ -41,8 +43,7 @@ h1 { font-size: 38px; line-height: 1.2; font-weight: 600; }
 .school-logo, .company-logo { display: flex; align-items: center; justify-content: center; width: 96px; height: 96px; overflow: hidden; position: relative; }
 .school-logo img { position: absolute; width: 160%; max-width: none; height: auto; left: -29%; top: -43%; }
 .company-logo img { width: 100%; height: auto; }
-.newcurem-logo img { width: 78%; }
-.samsung-logo img { width: 165%; max-width: none; }
+.company-logo img { max-height: 100%; object-fit: contain; }
 .section { border-top: 1px solid var(--line); padding: 28px 0; }
 h2 { font-size: 26px; line-height: 1.35; font-weight: 600; }
 .section-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px 24px; }
@@ -51,7 +52,9 @@ h2 { font-size: 26px; line-height: 1.35; font-weight: 600; }
 .news-list { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 12px; }
 .news-list li { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 16px; }
 .news-list time { font-size: 15px; color: var(--muted); padding-top: 2px; }
+.publication-category { margin-top: 30px; font-size: 21px; }
 .publications { margin-top: 24px; }
+.journal-publication { display: block; }
 .publication { display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 28px; padding: 24px 0; border-bottom: 1px solid var(--line); align-items: start; }
 .publication:first-child { padding-top: 0; }
 .publication:last-child { border-bottom: 0; padding-bottom: 0; }
@@ -59,9 +62,9 @@ h2 { font-size: 26px; line-height: 1.35; font-weight: 600; }
 .paper-visual img { width: 100%; height: 180px; object-fit: contain; }
 .venue { display: flex; flex-wrap: wrap; gap: 6px 10px; font-size: 15px; font-weight: 600; margin-bottom: 6px; }
 .venue .distinction { font-weight: 400; color: var(--muted); }
-h3 { font-size: 20px; line-height: 1.4; font-weight: 600; }
-.paper-copy h3 a, .patent-list h3 a { color: var(--ink); }
-.paper-copy h3 a:hover, .patent-list h3 a:hover { color: var(--accent); }
+h3, h4 { font-size: 20px; line-height: 1.4; font-weight: 600; }
+.paper-copy h4 a, .patent-list h3 a { color: var(--ink); }
+.paper-copy h4 a:hover, .patent-list h3 a:hover { color: var(--accent); }
 .authors { font-size: 15px; line-height: 1.65; margin-top: 8px; color: var(--muted); }
 .authors strong { color: var(--ink); }
 .paper-keywords { font-size: 15px; color: var(--muted); margin-top: 10px; }
@@ -73,8 +76,9 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; }
 .concept-line { width: 1px; height: 14px; background: #888; margin: 10px 0; }
 .latent-units { display: flex; gap: 18px; font-size: 24px; margin-top: 12px; }
 .timeline { margin-top: 20px; }
-.timeline-entry { display: grid; grid-template-columns: 96px minmax(0, 1fr) max-content; gap: 24px; margin-top: 26px; align-items: start; }
+.timeline-entry { display: grid; grid-template-columns: 96px minmax(0, 1fr) max-content; gap: 40px; margin-top: 26px; align-items: start; }
 .timeline-copy { min-width: 0; }
+.current-status { display: block; margin-top: 4px; }
 .date-range { font-size: 15px; color: var(--muted); padding-top: 3px; text-align: right; white-space: nowrap; }
 .role { font-size: 17px; margin-top: 3px; }
 .entry-detail { font-size: 16px; margin-top: 8px; }
@@ -103,14 +107,14 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; }
   .hero { display: flex; flex-direction: column; gap: 24px; padding: 28px 0; }
   h1 { font-size: 34px; }
   .portrait { width: min(260px, 100%); padding: 0; }
-  .portrait-frame { width: 200px; height: 200px; margin-inline: 0; }
+  .portrait-frame { width: 200px; height: 200px; margin-inline: auto; }
   .portrait figcaption { width: 100%; }
   h2 { font-size: 24px; }
   .news-list li { grid-template-columns: 1fr; gap: 2px; }
   .publication { grid-template-columns: 1fr; gap: 16px; }
   .paper-visual { max-width: 360px; }
   .paper-visual img { height: auto; max-height: 240px; }
-  .timeline-entry { grid-template-columns: 72px minmax(0, 1fr); gap: 8px 14px; }
+  .timeline-entry { grid-template-columns: 72px minmax(0, 1fr); gap: 8px 28px; }
   .school-logo, .company-logo { width: 72px; height: 72px; }
   .patent-list li { grid-template-columns: 1fr; gap: 5px; }
   .patent-list p span { display: block; }
