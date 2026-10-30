@@ -113,27 +113,63 @@ h3, h4 { font-size: 20px; line-height: 1.4; font-weight: 600; }
   .date-range { grid-column: 2; justify-self: end; }
 }
 @media (max-width: 600px) {
-  .wrap { width: calc(100% - 36px); }
-  .site-header { flex-direction: column; align-items: flex-start; gap: 10px; padding: 16px 0; }
-  .site-header nav { gap: 10px 20px; }
-  .hero { display: flex; flex-direction: column; gap: 24px; padding: 28px 0; }
-  h1 { font-size: 34px; }
-  .portrait { width: min(260px, 100%); padding: 0; }
-  .portrait-frame { width: 200px; height: 200px; margin-inline: auto; }
-  .portrait figcaption { width: 100%; }
+  .wrap { width: calc(100% - 40px); }
+  .site-header { flex-direction: row; align-items: center; gap: 16px; padding: 12px 0; }
+  .wordmark { min-height: 44px; align-items: center; }
+  .piano-mark { width: 34px; height: 24px; }
+  .site-header nav { gap: 0 14px; font-size: 13px; }
+  .site-header nav a { display: inline-flex; align-items: center; min-height: 44px; }
+  .hero { display: flex; flex-direction: column; align-items: stretch; gap: 24px; padding: 28px 0 32px; }
+  .hero-copy { min-width: 0; }
+  h1 { font-size: clamp(28px, 8vw, 34px); text-align: center; }
+  .name-korean { margin-left: 0.45em; }
+  .bio { font-size: 16px; line-height: 1.7; margin-top: 16px; }
+  .portrait { order: -1; align-self: center; width: min(280px, 100%); padding: 0; }
+  .portrait-frame { width: 180px; height: 180px; margin-inline: auto; }
+  .portrait figcaption { width: 100%; gap: 3px; font-size: 14px; margin-top: 14px; }
+  .portrait-detail .icon { width: 16px; height: 16px; flex-basis: 16px; }
+  .portrait a { min-height: 36px; }
+  .contact-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px; margin-top: 16px; }
+  .contact-links a { min-height: 44px; }
+  .section { padding: 28px 0; }
   h2 { font-size: 24px; }
-  .news-list li { grid-template-columns: 1fr; gap: 2px; }
-  .publication { grid-template-columns: 1fr; gap: 16px; }
-  .paper-visual { max-width: 360px; }
+  .section-heading { gap: 8px 16px; }
+  .news-list { gap: 16px; }
+  .news-list li { grid-template-columns: 1fr; gap: 3px; font-size: 15.5px; line-height: 1.6; }
+  .news-list time { font-size: 13px; padding-top: 0; }
+  .publication-category-heading { gap: 6px 12px; margin-top: 26px; }
+  .publication-category { font-size: 16px; }
+  .publication-note { font-size: 12.5px; }
+  .publication { grid-template-columns: minmax(0, 1fr); gap: 18px; padding: 28px 0; }
+  .paper-visual { width: 100%; max-width: 360px; justify-self: center; }
   .qwerty-visual { padding-top: 0; }
   .paper-visual-pending { display: none; }
-  .paper-visual img { height: auto; max-height: 240px; }
-  .timeline-entry { grid-template-columns: 72px minmax(0, 1fr); gap: 8px 12px; }
-  .school-logo, .company-logo { width: 72px; height: 72px; }
-  .samsung-logo { width: 86px; height: auto; }
-  .samsung-logo img { width: 86px; }
+  .paper-visual img { height: auto; max-height: 320px; }
+  .paper-copy { min-width: 0; }
+  .paper-copy h4 { font-size: 19px; line-height: 1.45; overflow-wrap: anywhere; }
+  .venue { font-size: 14px; }
+  .authors { font-size: 14px; line-height: 1.65; }
+  .paper-keywords { font-size: 14px; line-height: 1.6; }
+  .paper-links { margin-top: 6px; gap: 8px 24px; }
+  .paper-links a { display: inline-flex; align-items: center; min-height: 44px; }
+  .timeline-entry { grid-template-columns: 56px minmax(0, 1fr); gap: 4px 16px; }
+  .timeline-copy { display: contents; }
+  .timeline-copy h3 { grid-column: 2; grid-row: 1; font-size: 19px; }
+  .role { grid-column: 2; grid-row: 2; font-size: 16px; margin-top: 0; }
+  .date-range { grid-column: 2; grid-row: 3; font-size: 13px; white-space: normal; }
+  .entry-detail { grid-column: 1 / -1; grid-row: 4; margin-top: 10px; font-size: 15px; line-height: 1.65; }
+  .education-entry .entry-detail { grid-column: 2; grid-row: 3; margin-top: 2px; font-size: 14px; }
+  .education-entry .date-range { grid-row: 4; }
+  .school-logo, .company-logo { width: 56px; height: 56px; grid-row: 1 / span 3; align-self: start; margin-top: 4px; }
+  .samsung-logo { width: 64px; height: auto; }
+  .samsung-logo img { width: 64px; }
   .patent-list li { grid-template-columns: 1fr; gap: 5px; }
+  .patent-list h3 { font-size: 16px; overflow-wrap: anywhere; }
+  .patent-list p { font-size: 14px; }
   .patent-list p span { display: block; }
+  .site-footer { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; font-size: 13px; align-items: center; }
+  .site-footer > span { grid-column: 1; }
+  .site-footer > a { grid-column: 2; grid-row: 1 / span 2; display: inline-flex; align-items: center; min-height: 44px; }
 }
 @media print {
   .wrap { width: 100%; }
